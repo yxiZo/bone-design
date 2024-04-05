@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "typescript": "^5.4.4",
     "vite": "^5.2.8"
   },
   "dependencies": {
