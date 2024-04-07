@@ -12,6 +12,7 @@ const rollupOptions = {
   },
 };
 export default defineConfig({
+  
   plugins: [
     vue(),
     vueJsx({

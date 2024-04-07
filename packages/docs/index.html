@@ -15,7 +15,7 @@
     <script type="module">
         import  "@bone-design/components/dist/style.css"
         import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import SmartyUI, { SFCButton } from "@bone-design/components/dist/smarty-ui.mjs";
+        import SmartyUI, { SFCButton , MyButton as SButton } from "@bone-design/components/dist/smarty-ui.mjs";
 
         createApp({
             template: `
@@ -28,11 +28,11 @@
         </div>
         <div style="margin-bottom:20px;"
         >
-            <SFCButton color="blue" plain>朴素按钮</SFCButton>
-            <SFCButton color="green" plain>绿色按钮</SFCButton>
-            <SFCButton color="gray" plain>灰色按钮</SFCButton>
-            <SFCButton color="yellow" plain>黄色按钮</SFCButton>
-            <SFCButton color="red" plain>红色按钮</SFCButton>
+            <SButton color="blue" >朴素按钮</SButton>
+            <SButton color="green" >绿色按钮</SButton>
+            <SButton color="gray" >灰色按钮</SButton>
+            <SButton color="yellow" >黄色按钮</SButton>
+            <SButton color="red" >红色按钮</SButton>
         </div>
         <div style="margin-bottom:20px;">
             <SFCButton size="small" plain>小按钮</SFCButton>

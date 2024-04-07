@@ -1,5 +1,5 @@
 import { defineComponent, PropType } from "vue";
-import "uno.css";
+// import "uno.css";
 
 export type ISize = "small" | "medium" | "large";
 export type IColor =
@@ -68,19 +68,21 @@ export default defineComponent({
     return () => (
       <button
         class={`
-          py-${size[props.size].y}
-          px-${size[props.size].x}
-          ${props.round ? "rounded-full" : "rounded-lg"}
-          bg-${props.color}-${props.plain ? "100" : "500"}
-          hover:bg-${props.color}-400
-          border-${props.color}-${props.plain ? "500" : "500"}
-          cursor-pointer
-          border-solid
-          text-${props.plain ? props.color + "-500" : "white"}
-          text-${size[props.size].text}
-          hover:text-white
-          transition duration-300 ease-in-out transform hover:scale-105
-          mx-1
+        color-${props.color}
+        py-1.5
+        px-3
+        rounded-lg
+        bg-green-500
+        hover:bg-green-400
+        border-green-500
+        cursor-pointer
+        border-solid
+        text-white
+        text-base
+        hover:text-white
+        transition duration-300 ease-in-out transform hover:scale-105
+        mx-1
+        
           `}
       >
         {props.icon !== "" ? (
