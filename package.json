@@ -6,19 +6,24 @@
   "main": "index.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rimraf packages/**/dist",
+    "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
     "dev:docs": "pnpm -r --filter @bone-design/docs run dev",
+    "build:docs": "pnpm -r --filter @bone-design/docs run build",
     "build:components": "pnpm -r --filter @bone-design/components run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "rimraf": "^5.0.5",
     "tailwindcss": "^3.4.3",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.4",
     "vite": "^5.2.8"
   },
