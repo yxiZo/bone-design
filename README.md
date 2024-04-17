@@ -32,7 +32,10 @@ console.log(parseFloat(string3), Boolean(parseFloat(string3)))
 
 ```
 
-4. 
+4. 防止隐式类型转换
+
+特别注意  数字 0  字符串 0 在 三元表达式下  的 隐式类型转换 false 的 情况
+
 
 
 
