@@ -39,7 +39,8 @@ console.log(parseFloat(string3), Boolean(parseFloat(string3)))
 
 5. Utils 库搭建,  参考lodash Radash
    以及添加自己认为的好用的方法
-6. 
+   
+6. RTL 支持
 
 
 
