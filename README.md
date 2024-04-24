@@ -41,7 +41,11 @@ console.log(parseFloat(string3), Boolean(parseFloat(string3)))
    以及添加自己认为的好用的方法
    
 6. RTL 支持
-
+   - 参考资料
+   - https://github.com/happylindz/blog/issues/16
+   - https://www.mdui.org/design/usability/bidirectionality.html#
+   - https://developer.android.com/training/basics/supporting-devices/languages?hl=zh-cn
+   - https://developers.google.com/fonts/docs/material_icons?hl=zh-cn
 
 
 
