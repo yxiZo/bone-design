@@ -37,6 +37,9 @@ console.log(parseFloat(string3), Boolean(parseFloat(string3)))
 特别注意  数字 0  字符串 0 在 三元表达式下  的 隐式类型转换 false 的 情况
 
 
+5. Utils 库搭建,  参考lodash Radash
+   以及添加自己认为的好用的方法
+6. 
 
 
 
