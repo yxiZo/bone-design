@@ -2,7 +2,7 @@
   "name": "bone-design",
   "version": "1.0.0",
   "description": "",
-  "private":"true",
+  "private": true,
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
     "dev:docs": "pnpm -r --filter @bone-design/docs run docs:dev",
     "build:docs": "pnpm -r --filter @bone-design/docs run docs:build",
-    "build:components": "pnpm -r --filter @bone-design/components run build"
+    "build:components": "pnpm -r --filter @bone-design/components run build",
+    "publish-packages": "pnpm run build && changeset version && changeset publish"
   },
   "keywords": [],
   "author": "",

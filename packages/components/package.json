@@ -1,14 +1,17 @@
 {
   "name": "@bone-design/components",
-  "version": "1.0.1",
-  "private": "false",
+  "version": "1.0.2",
+  "private": false,
   "description": "",
-  "main": "index.js",
+  "main": "dist/smarty-ui.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "vite build",
     "dev": "vite"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "",

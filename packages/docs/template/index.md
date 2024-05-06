@@ -17,3 +17,7 @@ tailwind 模板, 方便快速搭建页面结构
 [daisy UI](https://daisyui.com/)
 
 [shadcn](https://ui.shadcn.com/)
+
+### 动画素材
+
+[uiverse](https://uiverse.io/)
