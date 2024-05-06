@@ -1,3 +1,5 @@
+import { transformerTwoslash } from '@shikijs/vitepress-twoslash'
+
 /**
  * @type {import('vitepress').UserConfig}
  */
@@ -73,9 +75,39 @@ const config = {
         },
     },
     markdown: {
-        code: {
-            lineNumbers: true,
+        lineNumbers: true,
+        theme: { light: 'github-light', dark: 'github-dark' },
+
+        // shiki
+        languages: [
+            'html',
+            'javascript',
+            'typescript',
+            'css',
+            'json',
+            'vue',
+            'markdown',
+            'shell',
+            'bash',
+        ],
+        languageAlias: {
+            'my-lang': 'js'
         },
+        codeTransformers: [
+            transformerTwoslash()
+        ],
+        codeCopyButtonTitle: 'Copy code',
+        /**
+         * Setup Shiki instance
+         */
+        // shikiSetup: (shiki) => {
+
+        // }
+
+        // VitePress 使用 Markdown-it 作为解析器，使用 Shiki 来高亮不同语言语法。 
+        // // markdownit 配置
+        // anchor: {},
+
     },
 
     // vite: {
