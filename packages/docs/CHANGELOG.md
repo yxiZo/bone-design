@@ -1,5 +1,12 @@
 # @bone-design/docs
 
+## 1.0.4
+
+### Patch Changes
+
+- update reference link
+- bump version
+
 ## 1.0.3
 
 ### Patch Changes

@@ -1,5 +1,41 @@
 learning how to develop components 
 
+## 📦 Installation
+
+## ✨ Features
+
+
+## 🖥 Browser compatibility
+
+
+## ⌨️ Local Development
+
+
+## 🛣️ Ecosystem
+
+
+#### 📝 License
+
+
+## 🤝 Contributing
+
+使用 changeset 管理版本
+
+```bash
+pnpm changeset
+```
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+完成后会在 .changeset文件夹 生成 临时文件,  可以多次执行命令, 然后发版前一次消耗完所有的临时文件, 如下
+
+```bash
+pnpm changeset version
+pnpm changeset publish -r
+```
+
+
 ### 需求记录
 
 1. 数字金额输入框
