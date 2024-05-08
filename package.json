@@ -1,7 +1,7 @@
 {
   "name": "bone-design",
   "version": "1.0.0",
-  "description": "",
+  "description": "组件库",
   "private": true,
   "type": "module",
   "main": "index.js",
@@ -9,9 +9,10 @@
     "preinstall": "npx only-allow pnpm",
     "clear": "rimraf packages/**/dist",
     "build": "pnpm run clear && pnpm -r --filter=./packages/** run build",
-    "dev:docs": "pnpm -r --filter @bone-design/docs run docs:dev",
-    "build:docs": "pnpm -r --filter @bone-design/docs run docs:build",
-    "build:components": "pnpm -r --filter @bone-design/components run build",
+    "dev:docs": "pnpm -r --filter @bone-design/docs run dev",
+    "build:docs": "pnpm -r --filter @bone-design/docs run build",
+    "build:utils": "pnpm -r --filter @bone-design/utils run build",
+    "build:components-react": "pnpm -r --filter @bone-design/components-react run build",
     "publish-packages": "pnpm run build && changeset version && changeset publish"
   },
   "keywords": [],
@@ -30,7 +31,7 @@
     "vite": "^5.2.8"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "react": "^18.3.1"
   },
   "volta": {
     "node": "20.12.2"
