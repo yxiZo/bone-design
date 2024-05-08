@@ -1,12 +1,27 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path";
-
+import tailwindcss from "tailwindcss";
+import autoPrefixer from "autoprefixer";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [
+        tailwindcss,
+        autoPrefixer
+      ]
+    }
+  },
   build: {
     outDir: "dist", //输出文件名称
+    // cssTarget: "",
     lib: {
       entry: path.resolve(__dirname, "./src/components/index.ts"), //指定组件编译入口文件
       name: "bone-design",

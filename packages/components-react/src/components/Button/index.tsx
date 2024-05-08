@@ -1,5 +1,7 @@
-export default function Button() {
+import { Button } from '@/core-components/ui/button'
+
+export default function BoneButton() {
     return <>
-        <button>这是一个button</button>
+       <Button>Button</Button>
     </>
 }
